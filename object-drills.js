@@ -72,4 +72,11 @@ const obj5 = { name: 'Gordon Ramsay', jobTitle: 'Chef' };
 
 const tvArray = [obj1, obj2, obj3, obj4, obj5];
 
-console.log(tvArray);
+function interateTvArray(array) {
+  array.forEach(function (element) {
+    console.log(`${element.name}: ${element.jobTitle}`);
+  });
+  //return;
+}
+
+interateTvArray(tvArray);

@@ -73,3 +73,5 @@ function keyDeleter(obj) {
 console.log(keyDeleter(sampleObj));
 
 
+//Assignment 5
+//Properties that aren't there

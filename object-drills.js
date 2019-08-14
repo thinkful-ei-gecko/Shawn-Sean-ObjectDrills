@@ -65,10 +65,11 @@ console.log(food.meals[3]);  //lunch
  */
 
 const obj1 = { name: 'Dr. House', jobTitle: 'Medical Doctor' };
-const obj2 = { name: 'Peter Grifin', jobTitle: 'Brewer' };
+const obj2 = { name: 'Peter Grifin', jobTitle: 'Owner' };
 const obj3 = { name: 'Rick', jobTitle: 'Nonconformist' };
 const obj4 = { name: 'Homer Simpson', jobTitle: 'Nuclear Engineer' };
 const obj5 = { name: 'Gordon Ramsay', jobTitle: 'Chef' };
+
 
 const tvArray = [obj1, obj2, obj3, obj4, obj5];
 
@@ -80,3 +81,49 @@ function interateTvArray(array) {
 }
 
 interateTvArray(tvArray);
+
+/**
+ * ASSIGMENT 5: Properties that aren't there
+ * 
+ * Add a boss property to everyone in Assignment 4 but the owner
+ * 
+ * 
+ */
+
+const anArray = [obj1, obj2, obj3, obj4, obj5];
+
+function aName(array) {
+  array.forEach(function (element) {
+    if (element.jobTitle !== 'Owner') {
+      element.boss = '______';
+    }
+    else {
+      element.boss = 'no one';
+    }
+    console.log(`${element.jobTitle} ${element.name} reports to ${element.boss}`);
+  });
+  return (array);
+}
+
+aName(anArray);
+
+/**
+ *  ASSIGNMENT 6 : Cracking The Code
+ * 
+ * 
+ */
+//Decoder
+function decode(sentence) {
+  let splitSentence = sentence.split(' ');
+  let result = '';
+  for (i = 0; i < splitSentence.length; i++) {
+    let firstLetter = splitSentence[i].charAt(0);
+    let index;
+    const wordDecoder = {};
+    function (words) {
+      
+    }
+  return result;
+}
+
+console.log(decode('craft block argon meter bells brown croon droop'));
